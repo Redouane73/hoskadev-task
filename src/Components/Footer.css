@@ -1,0 +1,87 @@
+.footer {
+    background-color: #323B4B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    color: white;
+    padding: 10px 27px;
+}
+
+.sections {
+    height: 250px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.header {
+    align-content: start;
+}
+.yellow-line {
+    width: 100px;
+    height: 10px;
+    background-color: #FFC446;
+}
+.f-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.f-links .footer-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 8px;
+}
+
+.footer-link:hover{
+    color: #C18606;
+    transition: 0.3s ease;
+}
+
+.check {
+    width: 290px;
+    height: 50px;
+    display: flex;
+}
+
+.input {
+    height: 100%;
+    width: 80%;
+    font-size: 22px;
+}
+.check-btn {
+    width: 80px;
+    color: white;
+    background-color: #FFC446;
+    border: #FFC446 1px solid;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.icons-section {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr); /* 3 columns in the first row */
+    grid-auto-rows: auto; 
+    gap: 8px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

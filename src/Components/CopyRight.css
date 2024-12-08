@@ -1,0 +1,11 @@
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+    background-color: #29303D;
+    color: white;
+    padding: 10px 27px;
+    font-weight: 700;
+}
