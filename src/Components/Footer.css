@@ -1,10 +1,11 @@
 .footer {
-    background-color: #323B4B;
+    background-color: var(--footer-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 300px;
-    color: white;
+    width: 100vw;
+    color:var(--main-color);
     padding: 10px 27px;
 }
 
@@ -21,7 +22,7 @@
 .yellow-line {
     width: 100px;
     height: 10px;
-    background-color: #FFC446;
+    background-color:var(--button-color);
 }
 .f-links {
     display: flex;
@@ -32,12 +33,12 @@
 .f-links .footer-link {
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: var(--main-color);
     margin-top: 8px;
 }
 
 .footer-link:hover{
-    color: #C18606;
+    color: var( --aditional-color);
     transition: 0.3s ease;
 }
 
@@ -54,9 +55,9 @@
 }
 .check-btn {
     width: 80px;
-    color: white;
-    background-color: #FFC446;
-    border: #FFC446 1px solid;
+    color: var(--main-color);
+    background-color: var(--button-color);
+    border: var(--button-color) 1px solid;
     font-weight: 700;
     cursor: pointer;
 }
@@ -84,4 +85,27 @@
 .icon:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+    .footer{
+        flex-direction: column;
+        height: auto;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+    }
+    .sections{
+        height: auto;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-device-width: 992px){
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,0fr);
+        height: auto;
+    }
 }

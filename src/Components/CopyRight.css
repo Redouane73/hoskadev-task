@@ -9,3 +9,11 @@
     padding: 10px 27px;
     font-weight: 700;
 }
+
+@media (max-width: 576px) {
+    .copy-right{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+}

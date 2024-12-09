@@ -18,3 +18,12 @@
     font-style: normal;
   }
 
+  :root {
+    --main-color: #ffffff;
+    --button-color: #FFC446;
+    --seconde-btn-color:#FFEECA;
+    --footer-color:#323B4B;
+    --aditional-color:#C18606;
+    --navbar-color:#FFF9ED;
+    --black-txt: #000000
+  }

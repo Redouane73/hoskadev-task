@@ -10,7 +10,10 @@ function App() {
   return (
     <Routes>
       <Route path="/hoskadev-task" element={<HomePage />}></Route>
-      <Route path="/course" element={<CourseDetailsPage />}></Route>
+      <Route
+        path="/hoskadev-task/course"
+        element={<CourseDetailsPage />}
+      ></Route>
     </Routes>
   );
 }

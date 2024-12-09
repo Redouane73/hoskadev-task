@@ -25,18 +25,18 @@
 .link {
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: var(--black-txt);
 }
 
 .link:focus {
-    background-color: #FFC446;
-    color: white;
+    background-color: var(--button-color);
+    color: var(--main-color);
     padding: 8px;
     border-radius: 5px;
 }
 
 .link:hover{
-    color: #C18606;
+    color: var(--aditional-color);
     transition: 0.3s ease;
 }
 
@@ -49,7 +49,7 @@
 .btn{
    padding: 8px 20px;
    border-radius: 10px;
-   border: #C18606 1px solid;
+   border: var( --aditional-color) 1px solid;
    cursor: pointer;
 }
 
@@ -59,14 +59,36 @@
 }
 
 .btn1 {
-   background-color: #FFC446;
+   background-color: var(--button-color);
    color: white;
    font-weight: 600;
 
 }
 
 .btn2{
-    border: #C18606 1px solid;
+    border: var(--aditional-color) 1px solid;
     background-color: #FFEECA;
-    color: #C18606;
+    color: var(--aditional-color);
+ }
+
+ @media (max-width: 768px) {
+    .nav-links{
+        display: none;
+    }
+
+    .left-sec{
+        display: none;
+    }
+ }
+
+ @media (min-width: 768px) and (max-device-width: 992px) {
+    .nav-links{
+        gap: 6rem;
+    }
+ }
+
+ @media (min-width: 992px) and (max-device-width: 1200px){
+    .nav-links{
+        gap: 8rem;
+    }
  }

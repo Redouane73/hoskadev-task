@@ -4,22 +4,15 @@ import Logo from "../Assets/Logo.png";
 import "./NavBar.css";
 
 function NavBar() {
-  // const  = {
-  //   textDecoration: "none",
-  //   display: "flex",
-  //   alignItems: "center",
-  //   color: "white",
-  //   gap: "0.5rem",
-  // };
   return (
     <>
       <header className="navigation">
-        <div className="right-sec">
+        <section className="right-sec">
           <div className="logo-container">
             <img src={Logo} alt="logo" />
           </div>
-        </div>
-        <div className="links">
+        </section>
+        <section className="links nav-links ">
           <div>
             <Link to="/hoskadev-task" className="link">
               الرئيسية
@@ -35,15 +28,15 @@ function NavBar() {
               المقالات
             </Link>
           </div>
-        </div>
-        <div className="left-sec">
+        </section>
+        <section className="left-sec">
           <button href="#" className="btn btn1">
             دخول
           </button>
           <button href="#" className="btn btn2">
             تسجيل
           </button>
-        </div>
+        </section>
       </header>
     </>
   );

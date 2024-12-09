@@ -12,7 +12,7 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <div className="sections">
+        <section className="sections">
           <div className="header">
             <h3>عن هوسكا التعليمية</h3>
           </div>
@@ -34,8 +34,8 @@ function Footer() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="sections">
+        </section>
+        <section className="sections">
           <div className="header">
             <h3>روابط</h3>
           </div>
@@ -52,8 +52,8 @@ function Footer() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="sections">
+        </section>
+        <section className="sections">
           <div className="header">
             <h3>تحقق من شهادتك</h3>
           </div>
@@ -68,8 +68,8 @@ function Footer() {
           <div className="algeria-post">
             <img src={CartSib} alt="CartSib Icon" />
           </div>
-        </div>
-        <div className="icons-section">
+        </section>
+        <section className="icons-section">
           <div className="header">
             <h3>تابعنا</h3>
           </div>
@@ -91,7 +91,7 @@ function Footer() {
               <img src={TikTokIcon} alt="TikTokIcon" className="icon" />
             </div>
           </div>
-        </div>
+        </section>
       </footer>
     </>
   );
