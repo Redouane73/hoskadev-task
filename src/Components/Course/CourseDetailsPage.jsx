@@ -126,6 +126,7 @@ const CourseDetails = () => {
               </div>
             </div>
           </section>
+
           {/* card section in the left of(the description section) */}
 
           <section className="crd">

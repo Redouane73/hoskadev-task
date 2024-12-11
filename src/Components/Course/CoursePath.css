@@ -83,17 +83,18 @@
     background-color: #918E8E;
     color: var(--main-color);
   }
-  
+
   .cto-container{
     width: 200px;
     padding-top: 20px;
   }
 
-  
   /* Mobile Styles */
   @media (max-width: 768px) {
+
     .path {
       padding: 20px 0;
+      padding-top: 3rem;
     }
     .lessons-numb {
       padding: 2px 5px;
@@ -128,7 +129,6 @@
 
   }
 
-  
   /* Tablet Styles */
   @media (min-width: 768px) and (max-width: 992px) {
     .path {
@@ -144,7 +144,6 @@
   .course-def {
     font-size: 16px;
   }
-
 
   .content-opened{
     padding-right: 4rem;

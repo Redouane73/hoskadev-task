@@ -6,7 +6,7 @@
     height: 300px;
     width: 100vw;
     color:var(--main-color);
-    padding: 10px 27px;
+    padding: var(--default-padding);
 }
 
 .sections {

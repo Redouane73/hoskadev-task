@@ -30,19 +30,16 @@ function NavBar() {
       {/* Navigation Links */}
       <section className={`nav-links ${isMenuOpen ? "active" : ""}`}>
         <div>
-          {" "}
           <Link to="/hoskadev-task" className="link" onClick={toggleMenu}>
             الرئيسية
           </Link>
         </div>
         <div>
-          {" "}
           <Link to="/hoskadev-task" className="link" onClick={toggleMenu}>
             الدورات
           </Link>
         </div>
         <div>
-          {" "}
           <Link className="link" onClick={toggleMenu}>
             المقالات
           </Link>
