@@ -1,0 +1,152 @@
+.navigation {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 27px;
+    font-size: 22px;
+    background-color: #fff9ed;
+    position: relative;
+  }
+  
+  .right-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-container img {
+    height: 60px;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--black-txt);
+  }
+  
+  .links {
+    display: flex;
+    gap: 10rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: var(--black-txt);
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    color: var(--aditional-color);
+    transition: 0.3s ease;
+  }
+  .link:focus {
+    background-color: var(--button-color);
+    color: var(--main-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+  
+  .left-sec {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: var(--aditional-color) 1px solid;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
+  }
+  
+  .btn1 {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .btn2 {
+    background-color: #ffeece;
+    color: var(--aditional-color);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 992px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      background-color: #fff9ed;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .left-sec {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      position: absolute;
+      top: 280px;
+      right: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: #fff9ed;
+      transition: all 0.3s ease;
+    }
+    
+
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .left-sec.active {
+      display: flex;
+    }
+    
+
+    .hamburger-menu {
+      display: block;
+    }
+  }
+
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .nav-links {
+      gap: 4rem;
+    }
+
+    .left-sec {
+        top: 340px;
+    }
+    
+  }
+  /* Desktop Styles */
+  @media (min-width: 992px){
+    .hamburger-menu {
+      display: none;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 8rem;
+    }
+  
+    .left-sec {
+      display: flex;
+    }
+  }
+  

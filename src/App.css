@@ -26,4 +26,66 @@
     --aditional-color:#C18606;
     --navbar-color:#FFF9ED;
     --black-txt: #000000
+    --grey-color : #626060;
+    --default-padding : 10px 27px;
   }
+
+  .flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #918E8E;
+  }
+
+  .txt-gold {
+    color: var(--aditional-color);
+  }
+
+  .centre {
+    display: flex;
+    gap: 10px;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .black-text{
+    color: var(--black-txt);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .right-pad {
+    padding-right: 4rem;
+    font-size: 18px;
+  }
+  
+  .normal-font {
+    font-weight: 400;
+  }
+  
+  .box {
+    font-size: 24px;
+    color: var(--black-txt);
+    font-weight: 700;
+    padding-top: 20px;
+  }
+  
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  

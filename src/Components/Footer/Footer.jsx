@@ -47,9 +47,7 @@ function Footer() {
               </Link>
             </div>
             <div>
-              <Link to="/Blogs" className="footer-link">
-                المقالات
-              </Link>
+              <Link className="footer-link">المقالات</Link>
             </div>
           </div>
         </section>

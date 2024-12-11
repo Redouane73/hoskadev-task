@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import CopyRight from "./CopyRight";
+import { fetchCourses } from "../api"; // Import API function
+import NavBar from "../Navigation/NavBar";
+import "./HomePage.css";
+
+//Assets import
+import Footer from "../Footer/Footer";
+import CopyRight from "../Footer/CopyRight";
 import Graphic from "../Assets/Graphic-designer1 1.png";
 import Clock from "../Assets/Clock.png";
 import Lessons from "../Assets/Flashcards.png";
 import Stars from "../Assets/star group.png";
-import "./HomePage.css";
-
-// Base URL for the API
-const BASE_URL = "https://test-api.mapiner.tech";
 
 const HomePage = () => {
   const [courses, setCourses] = useState([]);
@@ -20,30 +20,19 @@ const HomePage = () => {
   // Fetch courses from API
   useEffect(() => {
     const controller = new AbortController(); // AbortController for cleanup
-    const fetchData = async () => {
+    const loadCourses = async () => {
       setIsLoading(true); // Show loading state
       try {
-        const response = await fetch(`${BASE_URL}/api/courses`, {
-          signal: controller.signal,
-        });
-        const data = await response.json();
-
-        // Handle successful response
-        if (response.ok && data.success) {
-          setCourses(data.courses);
-        } else {
-          throw new Error(data.message || "Failed to fetch courses");
-        }
+        const data = await fetchCourses(); // fetch list of the courses
+        setCourses(data);
       } catch (err) {
-        if (err.name !== "AbortError") {
-          setError(err.message); // Capture error
-        }
+        setError(err.message); // Capture error
       } finally {
         setIsLoading(false); // Reset loading state
       }
     };
 
-    fetchData();
+    loadCourses();
 
     return () => controller.abort(); // Cleanup fetch on unmount
   }, []);
@@ -105,8 +94,8 @@ const HomePage = () => {
                     </div>
                     <div className="centre">
                       <img src={Lessons} />
-                      <div>درس</div>
                       <div>{course.course_lessons}</div>
+                      <div>درس</div>
                     </div>
                     <div className="course-level">{course.course_level}</div>
                   </div>

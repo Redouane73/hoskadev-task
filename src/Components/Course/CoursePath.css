@@ -1,0 +1,153 @@
+.path {
+    width: 80vw;
+    padding: var(--default-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lessons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+
+  .course-intro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+  }
+
+  .show-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 1rem;
+    padding-right: 4rem;
+    font-size: 20px;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 100%;
+  }
+  .content-opened {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1rem;
+    padding-right: 8rem;
+  }
+
+  .lesson {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lesson-info {
+    display: flex;
+    gap: 8px;
+  }
+  .first-pointer.active {
+    transform: scaleY(-1);
+  }
+  .sec-pointer.active {
+    transform: scaleY(-1);
+  }
+
+  .lessons-numb {
+    padding: 5px 10px;
+    background-color: var(--button-color);
+    color: var(--main-color);
+    border-radius: 3px;
+    font-size: 18px;
+  }
+  .lessons-dur {
+    padding: 5px 10px;
+    background-color: var(--aditional-color);
+    color: var(--main-color);
+    border-radius: 3px;
+    font-size: 18px;
+  }
+  .special {
+    color: #D89400;
+    text-decoration: underline;
+  }
+  .grey-div {
+    width: 50px;
+    height: 25px;
+    padding: 5px 10px;
+    background-color: #918E8E;
+    color: var(--main-color);
+  }
+  
+  .cto-container{
+    width: 200px;
+    padding-top: 20px;
+  }
+
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .path {
+      padding: 20px 0;
+    }
+    .lessons-numb {
+      padding: 2px 5px;
+      font-size: 12px;
+    }
+    .lessons-dur {
+      padding: 2px 5px;
+      font-size: 12px;
+    }
+  .right-pad {
+      padding-right: 0.75rem;
+    }
+
+    .pointer {
+      font-size: 14px;
+    }
+
+    .show-content {
+      padding-right: 1rem;
+    }
+    .content-opened{
+      padding-right: 3rem;
+      font-size: 14px;
+    }
+    .course-def {
+      font-size: 16px;
+    }
+    .lesson-info {
+      display: flex;
+      gap: 2px;
+    }
+
+  }
+
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .path {
+      padding: 20px 0;
+    }
+   .pointer {
+    font-size: 18px;
+   }
+
+   .show-content {
+    padding-right: 2rem;
+  }
+  .course-def {
+    font-size: 16px;
+  }
+
+
+  .content-opened{
+    padding-right: 4rem;
+    font-size: 16px;
+  }
+  }

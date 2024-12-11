@@ -1,9 +1,8 @@
 // App.js
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./Components/NavBar";
-import HomePage from "./Components/HomePage";
-import CourseDetailsPage from "./Components/CourseDetailsPage";
+import HomePage from "./Components/HomePage/HomePage";
+import CourseDetailsPage from "./Components/Course/CourseDetailsPage";
 import "./App.css";
 
 function App() {
