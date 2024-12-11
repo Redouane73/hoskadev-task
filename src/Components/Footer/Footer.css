@@ -34,7 +34,7 @@
     text-decoration: none;
     cursor: pointer;
     color: var(--main-color);
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 .footer-link:hover{

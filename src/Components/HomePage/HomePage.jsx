@@ -72,7 +72,7 @@ const HomePage = () => {
             {courses.map((course) => (
               <div key={course.id} className="course-card">
                 <div className="image-container">
-                  <img src={Graphic} alt="course image" />
+                  <img src={Graphic} alt="Course illustration" />
                 </div>
                 <div className="details-container">
                   <div>
@@ -80,7 +80,7 @@ const HomePage = () => {
                   </div>
                   <div className="flex">
                     <div>
-                      <img src={Stars} alt="rating stars" />
+                      <img src={Stars} alt="Rating stars" />
                     </div>
                     <div>
                       <span className="txt-gold">{course.rating}</span>(

@@ -46,7 +46,22 @@ const CourseDetails = () => {
 
   // Loading state
   if (!course) {
-    return <div>Loading...</div>;
+    return (
+      <div className="spinner center">
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+        <div className="spinner-blade"></div>
+      </div>
+    );
   }
 
   // Destructuring course data
@@ -72,19 +87,19 @@ const CourseDetails = () => {
               <div className="column">
                 <div className="inline">
                   <div>
-                    <img src={Target} alt="" />
+                    <img src={Target} alt="target icon" />
                   </div>
                   <p> الفئة المستهدفة: {specifications.course_level}</p>
                 </div>
                 <div className="inline">
                   <div>
-                    <img src={Study} alt="" />
+                    <img src={Study} alt="Book icon" />
                   </div>
                   <p>نوع الدورة: {specifications.course_type}</p>
                 </div>
                 <div className="inline">
                   <div>
-                    <img src={Certificate} alt="" />
+                    <img src={Certificate} alt="Certificate icon" />
                   </div>
                   <p>{specifications.course_certificate}</p>
                 </div>
@@ -92,19 +107,19 @@ const CourseDetails = () => {
               <div className="column">
                 <div className="inline">
                   <div>
-                    <img src={Language} alt="" />
+                    <img src={Language} alt="Language icon" />
                   </div>
                   <p>{specifications.course_language}</p>
                 </div>
                 <div className="inline">
                   <div>
-                    <img src={Time} alt="" />
+                    <img src={Time} alt="Duration icon" />
                   </div>
                   <p>{specifications.course_duration}</p>
                 </div>
                 <div className="inline">
                   <div>
-                    <img src={Back} alt="" />
+                    <img src={Back} alt="Bag icon" />
                   </div>{" "}
                   <p>بداية الدورة: {specifications.course_begin}</p>
                 </div>
@@ -115,7 +130,7 @@ const CourseDetails = () => {
 
           <section className="crd">
             <div className="course-image">
-              <img src={Light} alt="" />
+              <img src={Light} alt="Graphic illustration" />
             </div>
             <div className="flex">
               <div className="price">
@@ -125,7 +140,7 @@ const CourseDetails = () => {
                 </div>
               </div>
               <div className="flame">
-                <img src={HotPrice} alt="" />
+                <img src={HotPrice} alt="Hot Price icon" />
               </div>
               <div className="discount">20% تخفيض</div>
             </div>
@@ -149,7 +164,7 @@ const CourseDetails = () => {
               <div key={index} className="skills-learned">
                 <div className="skill">
                   <div>
-                    <img src={Check} alt="" />
+                    <img src={Check} alt="Check icon" />
                   </div>
                   <div>
                     <h4>{output.title}</h4>

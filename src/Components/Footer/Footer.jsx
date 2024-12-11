@@ -12,6 +12,7 @@ function Footer() {
   return (
     <>
       <footer className="footer">
+        {/* About Hoska section */}
         <section className="sections">
           <div className="header">
             <h3>عن هوسكا التعليمية</h3>
@@ -35,6 +36,8 @@ function Footer() {
             </div>
           </div>
         </section>
+
+        {/* Links section */}
         <section className="sections">
           <div className="header">
             <h3>روابط</h3>
@@ -51,6 +54,8 @@ function Footer() {
             </div>
           </div>
         </section>
+
+        {/* Check Your Certificate Section*/}
         <section className="sections">
           <div className="header">
             <h3>تحقق من شهادتك</h3>
@@ -67,6 +72,8 @@ function Footer() {
             <img src={CartSib} alt="CartSib Icon" />
           </div>
         </section>
+
+        {/* Social Media section */}
         <section className="icons-section">
           <div className="header">
             <h3>تابعنا</h3>

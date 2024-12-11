@@ -62,30 +62,3 @@
     cursor: pointer;
   }
   
-  .right-pad {
-    padding-right: 4rem;
-    font-size: 18px;
-  }
-  
-  .normal-font {
-    font-weight: 400;
-  }
-  
-  .box {
-    font-size: 24px;
-    color: var(--black-txt);
-    font-weight: 700;
-    padding-top: 20px;
-  }
-  
-  .flexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .flex-centre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }  
