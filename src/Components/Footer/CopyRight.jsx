@@ -1,6 +1,8 @@
 import React from "react";
-import Frame from "../Assets/Frame 239.png";
 import "./CopyRight.css";
+
+// Asset imports
+import Frame from "../Assets/Frame 239.png";
 
 function CopyRight() {
   return (

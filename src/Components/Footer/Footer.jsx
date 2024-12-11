@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css";
+
+// Asset imports
 import FacebookIcon from "../Assets/facebook.png";
 import InstaIcon from "../Assets/insta.png";
 import TelegramIcon from "../Assets/telegram.png";
 import CallIcon from "../Assets/call.png";
 import TikTokIcon from "../Assets/tiktok.png";
 import CartSib from "../Assets/carte_CIB 1.png";
-import "./Footer.css";
 
 function Footer() {
   return (

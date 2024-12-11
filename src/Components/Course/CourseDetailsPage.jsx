@@ -44,7 +44,10 @@ const CourseDetails = () => {
     return <div>Error: {error}</div>;
   }
 
-  // Loading state
+  {
+    /* Show loading spinner */
+  }
+
   if (!course) {
     return (
       <div className="spinner center">
@@ -76,13 +79,13 @@ const CourseDetails = () => {
           {/* Right section in the(description section) */}
           <section className="desc">
             <div className="details-heading">
-              {" "}
               <h1>{basic_info.name}</h1>
             </div>
 
             <div className="basic-info">
               <p>{basic_info.description}</p>
             </div>
+
             <div className="info-container">
               <div className="column">
                 <div className="inline">

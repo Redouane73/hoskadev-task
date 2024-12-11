@@ -16,16 +16,16 @@ function NavBar() {
   return (
     <header className="navigation">
       {/* Logo Section */}
-      <div className="right-sec">
+      <section className="right-sec">
         <div className="logo-container">
           <img src={Logo} alt="logo" />
         </div>
-      </div>
+      </section>
 
       {/* Hamburger Menu Icon */}
-      <div className="hamburger-menu" onClick={toggleMenu}>
+      <section className="hamburger-menu" onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
-      </div>
+      </section>
 
       {/* Navigation Links */}
       <section className={`nav-links ${isMenuOpen ? "active" : ""}`}>
